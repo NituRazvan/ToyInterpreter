@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="576.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RunProgramController">
+   <children>
+       <TableView fx:id="heapTable" layoutX="21.0" layoutY="26.0" prefHeight="236.0" prefWidth="151.0">
+           <columns>
+               <TableColumn fx:id="heapAddressColumn" prefWidth="73.0" text="Adress" />
+   
+               
+               <TableColumn fx:id="heapValueColumn" prefWidth="77.0" text="Value" />
+           </columns>
+       </TableView>
+       <TableView fx:id="fileTable" layoutX="213.0" layoutY="26.0" prefHeight="236.0" prefWidth="151.0">
+           <columns>
+               <TableColumn fx:id="fileTableIdColumn" prefWidth="77.0" text="Identifier" />
+               <TableColumn fx:id="fileTableNameColumn" prefWidth="73.0" text="Name" />
+           </columns>
+       </TableView>
+       <TableView fx:id="symTable" layoutX="411.0" layoutY="26.0" prefHeight="236.0" prefWidth="151.0">
+           <columns>
+               <TableColumn fx:id="symTableNameColumn" prefWidth="75.0" text="VarName" />
+               <TableColumn fx:id="symTableValueColumn" prefWidth="75.0" text="Value" />
+           </columns>
+       </TableView>
+       <Label alignment="CENTER" layoutX="21.0" layoutY="2.0" prefHeight="25.0" prefWidth="151.0" text="Heap">
+           <font>
+           <Font name="System Bold" size="16.0" />
+           </font>
+       </Label>
+       <Label alignment="CENTER" layoutX="213.0" layoutY="2.0" prefHeight="25.0" prefWidth="151.0" text="FileTable">
+           <font>
+           <Font name="System Bold" size="16.0" />
+           </font>
+       </Label>
+       <Label alignment="CENTER" layoutX="410.0" layoutY="2.0" prefHeight="25.0" prefWidth="151.0" text="SymTable">
+           <font>
+           <Font name="System Bold" size="16.0" />
+           </font>
+       </Label>
+       <ListView fx:id="outList" layoutX="605.0" layoutY="26.0" prefHeight="236.0" prefWidth="151.0" />
+       <ListView fx:id="exeStack" layoutX="210.0" layoutY="292.0" prefHeight="236.0" prefWidth="549.0" />
+       <ListView fx:id="prgStateIdentifiers" layoutX="21.0" layoutY="290.0" onMousePressed="#mouseClickPrgStateIdentifiers" prefHeight="200.0" prefWidth="151.0" />
+       <Label alignment="CENTER" layoutX="604.0" layoutY="2.0" prefHeight="25.0" prefWidth="151.0" text="Output">
+           <font>
+           <Font name="System Bold" size="16.0" />
+           </font>
+       </Label>
+       <Label alignment="CENTER" layoutX="17.0" layoutY="264.0" prefHeight="25.0" prefWidth="158.0" text="PrgStateIdentifiers">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+       <Label alignment="CENTER" layoutX="209.0" layoutY="264.0" prefHeight="25.0" prefWidth="549.0" text="ExeStack">
+           <font>
+           <Font name="System Bold" size="16.0" />
+           </font>
+       </Label>
+       <TextField fx:id="noPrgStateTextField" editable="false" layoutX="123.0" layoutY="503.0" prefHeight="0.0" prefWidth="46.0" />
+       <Label layoutX="14.0" layoutY="502.0" text="No. PrgStates">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+       <Button fx:id="oneStepBTN" alignment="CENTER" layoutX="17.0" layoutY="537.0" mnemonicParsing="false" onAction="#executeOneStep" prefHeight="25.0" prefWidth="743.0" text="Execute One Step">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+
+ExeStack:
+
+[[open(text, var_f) , read(var_c, var_f)] , [if(var_c) then([read(var_c, var_f) , print(var_c);])else(print(0);) ; , close(var_f)]]
+
+SymTable
+
+
+Out
+
+
+FileTable
+
+
+Heap:
+
+
+
+
+ExeStack:
+
+[open(text, var_f) , read(var_c, var_f)]
+[if(var_c) then([read(var_c, var_f) , print(var_c);])else(print(0);) ; , close(var_f)]
+
+SymTable
+
+
+Out
+
+
+FileTable
+
+
+Heap:
+
+
+
+
+ExeStack:
+
+[open(text, var_f) , read(var_c, var_f)]
+[if(var_c) then([read(var_c, var_f) , print(var_c);])else(print(0);) ; , close(var_f)]
+
+SymTable
+
+
+Out
+
+
+FileTable
+
+
+Heap:
+
+
+
+
+ExeStack:
+
+open(text, var_f)
+read(var_c, var_f)
+[if(var_c) then([read(var_c, var_f) , print(var_c);])else(print(0);) ; , close(var_f)]
+
+SymTable
+
+
+Out
+
+
+FileTable
+
+
+Heap:
+
+
+
+
+ExeStack:
+
+open(text, var_f)
+read(var_c, var_f)
+[if(var_c) then([read(var_c, var_f) , print(var_c);])else(print(0);) ; , close(var_f)]
+
+SymTable
+
+
+Out
+
+
+FileTable
+
+
+Heap:
+
+
+
